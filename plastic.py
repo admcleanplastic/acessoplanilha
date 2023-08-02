@@ -1,6 +1,6 @@
 import sqlite3
 import streamlit as st
-st.set_page_config(page_title='Portal de Acesso',page_icon='clean.png')
+st.set_page_config(page_title='Portal de Acesso Clean Plastic',page_icon='clean.png')
 with open("master.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
@@ -16,7 +16,7 @@ def verifica_login(usuario, senha):
 # Tela de login
 def tela_login():
     st.image("clean.png",width=78)
-    st.title("Portal de Acesso")
+    st.title("Portal de Acesso Clean Plastic")
     usuario = st.text_input("Usuário")
     senha = st.text_input("Senha", type="password")
     if st.button("Login"):
@@ -25,7 +25,7 @@ def tela_login():
             st.success("Login realizado com sucesso!")
             # Provide a message to instruct the user to click the link and close the tab manually
             
-            st.markdown('[Acesso ao sistema](https://appdeaceapp-ufxe2nf7esptswcoubjwv6.streamlit.app/)', unsafe_allow_html=True)
+            st.markdown('[Acesso a Planilha de Fretes](https://docs.google.com/spreadsheets/d/16Pjw0vkLF-v2wfoOiKU9p5iE-5VYVBeDeBVfMHZw6Wg/edit?usp=sharing)', unsafe_allow_html=True)
         else:
             st.error("Credenciais inválidas!")
 
