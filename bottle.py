@@ -25,7 +25,7 @@ def tela_login():
             st.success("Login realizado com sucesso!")
             # Provide a message to instruct the user to click the link and close the tab manually
             
-            st.markdown('[Acesso ao sistema](https://appdeaceapp-ufxe2nf7esptswcoubjwv6.streamlit.app/)', unsafe_allow_html=True)
+            st.markdown('[Acesso a planilha de frete](https://docs.google.com/spreadsheets/d/1P21r1LXTOL0aQFbehdUTtd8eh64t_omdSn5FTwNlyiU/edit#gid=1482993478)', unsafe_allow_html=True)
         else:
             st.error("Credenciais inválidas!")
 
